@@ -12,11 +12,11 @@ const HomePage = () => {
   
   const featuredJobs = jobs.slice(0, 4);
   const categories = [
-    { name: "Software Development", count: 215 },
-    { name: "Data Science", count: 132 },
-    { name: "Marketing", count: 97 },
-    { name: "Design", count: 85 },
-    { name: "Product Management", count: 76 },
+    { name: "Software Development", count: 671 },
+    { name: "Data Science", count: 232 },
+    { name: "Marketing", count: 8 },
+    { name: "Design", count: 67 },
+    { name: "Product Management", count: 151 },
     { name: "DevOps", count: 68 },
   ];
 
