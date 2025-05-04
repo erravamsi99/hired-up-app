@@ -1,3 +1,5 @@
+npm install prisma @prisma/client
+npx prisma init
 {
   "name": "vite_react_shadcn_ts",
   "private": true,
