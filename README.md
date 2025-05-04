@@ -1,73 +1,86 @@
-# Welcome to your Lovable project
+# HiredUp 🌍
+**Your Gateway to Visa-Friendly Tech Jobs**
 
-## Project info
+HiredUp helps international students and job seekers find jobs that **sponsor visas** or are **cap-exempt**, with modern filtering, saved jobs, and persistent login — all in a polished, mobile-first UI.
 
-**URL**: https://lovable.dev/projects/9b4cb60b-a208-4842-9425-e03be5c5253a
+---
 
-## How can I edit this code?
+## 🚀 Live Demo
+👉 [https://hired-up-app.onrender.com](https://hired-up-app.onrender.com)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9b4cb60b-a208-4842-9425-e03be5c5253a) and start prompting.
+✅ Google & Email Authentication (via Clerk)  
+✅ Filter jobs by visa type (H1B, Cap-Exempt)  
+✅ Search by job title, category, location, and more  
+✅ Save or mark jobs as applied — persists across sessions  
+✅ Salary range filtering  
+✅ Responsive design (desktop + mobile)  
+✅ Backend with PostgreSQL + Prisma
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🧠 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend**: React, Tailwind CSS, Clerk Auth
+- **Backend**: Node.js / Express (or Next.js API routes)
+- **Database**: PostgreSQL (via Prisma ORM)
+- **Deployment**: Render
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Project Structure (if Next.js)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+/
+├── prisma/ # Prisma schema + migrations
+├── pages/ # Next.js API and frontend routes
+│ └── api/ # Job + user routes
+├── components/ # Reusable UI components
+├── lib/ # DB, auth, utils
+├── public/ # Static assets
+├── styles/ # Tailwind / global CSS
+└── README.md
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠 Setup Locally
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+# 1. Clone repo
+git clone https://github.com/your-username/hiredup.git && cd hiredup
+
+# 2. Install dependencies
+npm install
+
+# 3. Setup environment variables
+cp .env.example .env
+# Fill in DATABASE_URL, CLERK_API keys, etc.
+
+# 4. Run migrations
+npx prisma migrate dev --name init
+
+# 5. Start dev server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+🧪 Environment Variables
+env
+Copy
+Edit
+DATABASE_URL=postgresql://...
+CLERK_SECRET_KEY=...
+CLERK_PUBLISHABLE_KEY=...
+NEXT_PUBLIC_CLERK_FRONTEND_API=...
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+📌 TODO / Improvements
+ Add animations and transition effects
 
-**Use GitHub Codespaces**
+ Add job detail page routing (/jobs/:id)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+ Improve loading states
 
-## What technologies are used for this project?
+ Unit tests with Jest + React Testing Library
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9b4cb60b-a208-4842-9425-e03be5c5253a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🧑‍💼 Author
+Built with ❤️ by Erra Vamsi
