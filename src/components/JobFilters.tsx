@@ -46,11 +46,11 @@ export function JobFilters() {
     setFilters({
       query: filters.query,
       location: filters.location,
-      jobType: '',
-      experienceLevel: '',
-      workSetting: '',
-      h1Type: '',
-      jobCategory: '',
+      jobType: 'all',
+      experienceLevel: 'all',
+      workSetting: 'all',
+      h1Type: 'all',
+      jobCategory: 'all',
       minSalary: null,
       maxSalary: null
     });
@@ -80,7 +80,7 @@ export function JobFilters() {
                 <SelectValue placeholder="Select job type" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Types</SelectItem>
+                <SelectItem value="all">All Types</SelectItem>
                 <SelectItem value="Full-time">Full-time</SelectItem>
                 <SelectItem value="Part-time">Part-time</SelectItem>
                 <SelectItem value="Contract">Contract</SelectItem>
@@ -101,7 +101,7 @@ export function JobFilters() {
                 <SelectValue placeholder="Select experience level" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Levels</SelectItem>
+                <SelectItem value="all">All Levels</SelectItem>
                 <SelectItem value="Entry-level">Entry-level</SelectItem>
                 <SelectItem value="Junior">Junior</SelectItem>
                 <SelectItem value="Mid-level">Mid-level</SelectItem>
@@ -122,7 +122,7 @@ export function JobFilters() {
                 <SelectValue placeholder="Select work setting" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Settings</SelectItem>
+                <SelectItem value="all">All Settings</SelectItem>
                 <SelectItem value="Remote">Remote</SelectItem>
                 <SelectItem value="Onsite">Onsite</SelectItem>
                 <SelectItem value="Hybrid">Hybrid</SelectItem>
@@ -142,7 +142,7 @@ export function JobFilters() {
                 <SelectValue placeholder="Select H-1B status" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All</SelectItem>
+                <SelectItem value="all">All</SelectItem>
                 <SelectItem value="H-1B">H-1B</SelectItem>
                 <SelectItem value="Cap-Exempt">Cap-Exempt</SelectItem>
               </SelectContent>
@@ -193,7 +193,7 @@ export function JobFilters() {
                 <SelectValue placeholder="Select category" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Categories</SelectItem>
+                <SelectItem value="all">All Categories</SelectItem>
                 <SelectItem value="Software Development">Software Development</SelectItem>
                 <SelectItem value="Data Science">Data Science</SelectItem>
                 <SelectItem value="DevOps">DevOps</SelectItem>

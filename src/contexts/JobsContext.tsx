@@ -49,11 +49,11 @@ type JobsContextType = {
 const defaultFilters: SearchFilters = {
   query: '',
   location: '',
-  jobType: '',
-  experienceLevel: '',
-  workSetting: '',
-  h1Type: '',
-  jobCategory: '',
+  jobType: 'all',
+  experienceLevel: 'all',
+  workSetting: 'all',
+  h1Type: 'all',
+  jobCategory: 'all',
   minSalary: null,
   maxSalary: null,
 };
@@ -105,23 +105,23 @@ export const JobsProvider = ({ children }: { children: ReactNode }) => {
         job.job_location.toLowerCase().includes(filters.location.toLowerCase());
       
       // Job type filter
-      const matchesJobType = !filters.jobType || 
+      const matchesJobType = filters.jobType === 'all' || 
         job.job_type === filters.jobType;
       
       // Experience level filter
-      const matchesExperience = !filters.experienceLevel || 
+      const matchesExperience = filters.experienceLevel === 'all' || 
         job.experience_level === filters.experienceLevel;
       
       // Work setting filter
-      const matchesWorkSetting = !filters.workSetting || 
+      const matchesWorkSetting = filters.workSetting === 'all' || 
         job.work_setting === filters.workSetting;
       
       // H1 Type filter
-      const matchesH1Type = !filters.h1Type || 
+      const matchesH1Type = filters.h1Type === 'all' || 
         job.h1Type === filters.h1Type;
       
       // Job category filter
-      const matchesCategory = !filters.jobCategory || 
+      const matchesCategory = filters.jobCategory === 'all' || 
         job.job_category === filters.jobCategory;
       
       // Salary filter
