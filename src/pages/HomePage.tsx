@@ -30,7 +30,7 @@ const HomePage = () => {
               <div className="inline-block bg-white px-4 py-2 rounded-full shadow-sm">
                 <p className="text-sm font-medium flex items-center text-brand-purple">
                   <span className="bg-brand-purple h-2 w-2 rounded-full mr-2"></span>
-                  10,000+ Jobs Available
+                  4,000+ Jobs Available
                 </p>
               </div>
               
