@@ -3,6 +3,10 @@
 
 HiredUp helps international students and job seekers find jobs that **sponsor visas** or are **cap-exempt**, with modern filtering, saved jobs, and persistent login — all in a polished, mobile-first UI.
 
+
+https://github.com/user-attachments/assets/1396f6dc-15b9-4aa9-a57c-1d98056c18e9
+
+
 ---
 
 ## 🚀 Live Demo
